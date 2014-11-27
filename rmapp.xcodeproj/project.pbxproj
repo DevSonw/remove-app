@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE69F4911A26B2EE0063887A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE69F4901A26B2EE0063887A /* Foundation.framework */; };
+		FE69F49D1A26B2EF0063887A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE69F49C1A26B2EF0063887A /* main.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FE69F4A51A26B3BE0063887A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE69F4A41A26B3BE0063887A /* UIKit.framework */; };
+		FE69F4A71A26B4040063887A /* MobileInstallation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE69F4A61A26B4040063887A /* MobileInstallation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE69F48D1A26B2EE0063887A /* rmapp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = rmapp; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE69F4901A26B2EE0063887A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE69F4951A26B2EF0063887A /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		FE69F4961A26B2EF0063887A /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		FE69F4981A26B2EF0063887A /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		FE69F49B1A26B2EF0063887A /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/bin/0xdeadfa11; sourceTree = "<group>"; };
+		FE69F49C1A26B2EF0063887A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE69F49E1A26B2EF0063887A /* rmapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rmapp-Prefix.pch"; sourceTree = "<group>"; };
+		FE69F4A41A26B3BE0063887A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FE69F4A61A26B4040063887A /* MobileInstallation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileInstallation.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE69F48A1A26B2EE0063887A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE69F4A71A26B4040063887A /* MobileInstallation.framework in Frameworks */,
+				FE69F4A51A26B3BE0063887A /* UIKit.framework in Frameworks */,
+				FE69F4911A26B2EE0063887A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE69F4841A26B2EE0063887A = {
+			isa = PBXGroup;
+			children = (
+				FE69F4921A26B2EF0063887A /* rmapp */,
+				FE69F48F1A26B2EE0063887A /* Frameworks */,
+				FE69F48E1A26B2EE0063887A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE69F48E1A26B2EE0063887A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F48D1A26B2EE0063887A /* rmapp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE69F48F1A26B2EE0063887A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F4A61A26B4040063887A /* MobileInstallation.framework */,
+				FE69F4A41A26B3BE0063887A /* UIKit.framework */,
+				FE69F4901A26B2EE0063887A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE69F4921A26B2EF0063887A /* rmapp */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F49C1A26B2EF0063887A /* main.m */,
+				FE69F4931A26B2EF0063887A /* Package */,
+				FE69F4971A26B2EF0063887A /* Supporting Files */,
+			);
+			path = rmapp;
+			sourceTree = "<group>";
+		};
+		FE69F4931A26B2EF0063887A /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F4941A26B2EF0063887A /* DEBIAN */,
+				FE69F4991A26B2EF0063887A /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		FE69F4941A26B2EF0063887A /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F4951A26B2EF0063887A /* control.txt */,
+				FE69F4961A26B2EF0063887A /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		FE69F4971A26B2EF0063887A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F4981A26B2EF0063887A /* PackageVersion.plist */,
+				FE69F49E1A26B2EF0063887A /* rmapp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE69F4991A26B2EF0063887A /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F49A1A26B2EF0063887A /* bin */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		FE69F49A1A26B2EF0063887A /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				FE69F49B1A26B2EF0063887A /* 0xdeadfa11 */,
+			);
+			name = bin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE69F48C1A26B2EE0063887A /* rmapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE69F4A11A26B2EF0063887A /* Build configuration list for PBXNativeTarget "rmapp" */;
+			buildPhases = (
+				FE69F4891A26B2EE0063887A /* Sources */,
+				FE69F48A1A26B2EE0063887A /* Frameworks */,
+				FE69F48B1A26B2EE0063887A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rmapp;
+			productName = rmapp;
+			productReference = FE69F48D1A26B2EE0063887A /* rmapp */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE69F4851A26B2EE0063887A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					FE69F48C1A26B2EE0063887A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = FE69F4881A26B2EE0063887A /* Build configuration list for PBXProject "rmapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE69F4841A26B2EE0063887A;
+			productRefGroup = FE69F48E1A26B2EE0063887A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE69F48C1A26B2EE0063887A /* rmapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE69F48B1A26B2EE0063887A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE69F4891A26B2EE0063887A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE69F49D1A26B2EF0063887A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE69F49F1A26B2EF0063887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		FE69F4A01A26B2EF0063887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		FE69F4A21A26B2EF0063887A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rmapp/rmapp-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		FE69F4A31A26B2EF0063887A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rmapp/rmapp-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE69F4881A26B2EE0063887A /* Build configuration list for PBXProject "rmapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE69F49F1A26B2EF0063887A /* Debug */,
+				FE69F4A01A26B2EF0063887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE69F4A11A26B2EF0063887A /* Build configuration list for PBXNativeTarget "rmapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE69F4A21A26B2EF0063887A /* Debug */,
+				FE69F4A31A26B2EF0063887A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE69F4851A26B2EE0063887A /* Project object */;
+}
